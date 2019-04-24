@@ -13,3 +13,22 @@ To summarize: a project consists off different sub problems which all have the f
     \item Test conditions.
 \end{itemize}
 Multiple sub problems can be combined into a project phase.
+When talking about project phases, the following phases can be defined, there is a large resemblance with the goals defind in the previous section.
+\begin{itemize}
+    \item Image manipulation: Manipulate the input image to a form where it is easy to start the proces of finding the license plate.
+    \item The search: The search off the interire (manipulated) image to the license plate.
+    \item Evaluation: Confirmation or denial. 
+\end{itemize}
+These project phases each consist of multiple sub problems, these are defined in the following subsections.
+\subsection{Image manipulation}
+As earlier described consists this project phase of preparing the image for the search off a license plate.
+The preparation of this image consists of multiple steps.
+Each of these steps can be considerd a sub problem.
+\begin{enumerate}
+    \item \label{sub:uniform} \textbf{Uniform:} Transform the image to a uniform dimension. In this way all images from this point on have accactly the same characteristics.  
+    \item \label{sub:greyscale} \textbf{Greyscale:} Transform the image to a greyscale version off itself.
+    \item \label{sub:noise} \textbf{Noise:} Removal of possible noise in the picture.
+    \item \label{sub:detectAllEdges}\textbf{Edges: }Detecting off all the possible edges in an image.
+\end{enumerate}
+\subsection{The Search}
+\subsection{Evaluation}

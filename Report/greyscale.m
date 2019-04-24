@@ -6,8 +6,6 @@ function [rgbImage,greyImage] = greyscale(inputFileName)
 try
     % read input image
     [X,map] = imread(inputFileName);
-    figure
-    imhist(X)
     % transform input image to rgb if needed.
     if ~isempty(map)
         rgbImage = ind2rgb(X,map);
@@ -27,13 +25,9 @@ try
                     .114*double(blueChannel);
         % Backscale using unint8 for readebility.
         greyImage = uint8(greyImage);
-        figure
-        imhist(greyImage)
     else
         % image isn't RGB -> return input image.
         greyImage = rgbImage; 
-        figure
-        imhist(greyImage)
     end
 catch ME
     errorMessage = sprintf('Error in function %s() at line %d.\n\nError Message:\n%s', ...

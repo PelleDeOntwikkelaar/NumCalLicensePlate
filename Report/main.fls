@@ -81,6 +81,14 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/babel/babel.def
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/babel/txtbabel.def
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/cite/cite.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/cite/cite.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/dvipsnam.def
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/dvipsnam.def
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/glossaries/base/glossaries.sty
@@ -165,6 +173,8 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tools/verbatim.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tools/verbatim.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tools/varioref.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tools/varioref.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/main.aux
 INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/main.aux
 OUTPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/main.aux
@@ -251,15 +261,64 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/sections/section2.tex
 INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/sections/section2.tex
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/sections/section3.tex
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/sections/section3.tex
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/images/strel.png
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/images/strel.png
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/images/strel.png
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/images/dilate.png
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/images/dilate.png
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/images/dilate.png
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/images/erode.png
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/images/erode.png
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/images/erode.png
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/images/DE.png
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/images/DE.png
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/images/DE.png
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/sections/section4.tex
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/sections/section4.tex
 INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/sections/section5.tex
 INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/sections/section5.tex
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/sections/section6.tex
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/sections/section6.tex
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/sections/section7.tex
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/sections/section7.tex
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/sections/section8.tex
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/sections/section8.tex
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/main.bbl
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/main.bbl
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/sections/appendix.tex
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/sections/appendix.tex
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/greyscale.m
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmtt9.tfm
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/greyscale.m
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/greyscale.m
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1pcr.fd
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1pcr.fd
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/courier/pcrro8t.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/courier/pcrro8t.vf
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/courier/pcrro8r.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmss9.tfm
 INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/main.aux
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb

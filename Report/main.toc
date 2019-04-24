@@ -8,4 +8,19 @@
 \contentsline {subsubsection}{\numberline {1.4.1}Moving Images}{1}
 \contentsline {subsubsection}{\numberline {1.4.2}CUDA}{2}
 \contentsline {section}{\numberline {2}Problem Breakdown}{2}
-\contentsline {section}{\numberline {3}Development proces}{2}
+\contentsline {subsection}{\numberline {2.1}Image manipulation}{2}
+\contentsline {subsection}{\numberline {2.2}The Search}{3}
+\contentsline {subsection}{\numberline {2.3}Evaluation}{3}
+\contentsline {section}{\numberline {3}Component Overview}{3}
+\contentsline {subsection}{\numberline {3.1}Project Overview}{3}
+\contentsline {subsection}{\numberline {3.2}Image Manipulation Components}{3}
+\contentsline {subsubsection}{\numberline {3.2.1}Image Preparation}{3}
+\contentsline {subsubsection}{\numberline {3.2.2}Edge Detection}{4}
+\contentsline {subsubsection}{\numberline {3.2.3}Filling}{7}
+\contentsline {section}{\numberline {4}Tests and Results}{7}
+\contentsline {section}{\numberline {5}Development proces}{7}
+\contentsline {section}{\numberline {6}Critical Reflection}{7}
+\contentsline {section}{\numberline {7}Conclusion}{7}
+\contentsline {section}{\numberline {8}Possible Extensions}{7}
+\contentsline {section}{\numberline {9}Bibliography}{7}
+\contentsline {section}{\numberline {A}Matlab Scripts}{7}

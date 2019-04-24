@@ -28,6 +28,8 @@
     \usepackage{lastpage} % know last page (used in fancy header)
     \usepackage{babel}
     \usepackage{float}
+    \usepackage{cite}
+    \usepackage[usenames,dvipsnames]{xcolor}
     \setcitestyle{numbers,super}
     \usepackage{fancyhdr} % Fancy Header
     \usepackage[xindy, toc, numberedsection]{glossaries} % glossaries with xindy (recommended) for the indexing phase and show glossaries in TOC, and numberedsection to get a Setion number in the title
@@ -58,11 +60,55 @@
     
     %\usepackage{times} % Uncomment to use the Times New Roman font
     
+    % This is the color used for MATLAB comments below
+    \definecolor{MyDarkGreen}{rgb}{0.0,0.4,0.0}
+    
+    % For faster processing, load Matlab syntax for listing
+    \lstloadlanguages{Matlab}%
+    \lstset{language=Matlab,                        % Use MATLAB
+        frame=single,                           % Single frame around code
+        basicstyle=\small\ttfamily,             % Use small true type font
+        keywordstyle=[1]\color{blue}\bfseries,  % MATLAB functions bold and blue
+        keywordstyle=[2]\color{purple},         % MATLAB function arguments purple
+        keywordstyle=[3]\color{blue}\underbar,  % User functions underlined and blue
+        identifierstyle=,                       % Nothing special about identifiers
+                                                % Comments small dark green courier
+        commentstyle=\usefont{T1}{pcr}{m}{sl}\color{MyDarkGreen}\small,
+        stringstyle=\color{purple},             % Strings are purple
+        showstringspaces=false,                 % Don't put marks in string spaces
+        tabsize=5,                              % 5 spaces per tab
+        %
+        %%% Put standard MATLAB functions not included in the default
+        %%% language here
+        morekeywords={xlim,ylim,var,alpha,factorial,poissrnd,normpdf,normcdf},
+        %
+        %%% Put MATLAB function parameters here
+        morekeywords=[2]{on, off, interp},
+        %
+        %%% Put user defined functions here
+        morekeywords=[3]{FindESS, homework_example},
+        %
+        morecomment=[l][\color{blue}]{...},     % Line continuation (...) like blue comment
+        numbers=left,                           % Line numbers on left
+        firstnumber=1,                          % Line numbers start with line 1
+        numberstyle=\tiny\color{blue},          % Line numbers are blue
+        stepnumber=5,                           % Line numbers go in steps of 5
+        breaklines=true
+        }
+
+        % Includes a MATLAB script.
+        % The first parameter is the label, which also is the name of the script
+        %   without the .m.
+        % The second parameter is the optional caption.
+
+    \newcommand{\matlabscript}[2]
+        {\begin{itemize}\item[]\lstinputlisting[caption=#2,label=#1]{#1.m}\end{itemize}}
     
     
     %----------------------------------------------------------------------------------------
     %	DOCUMENT INFORMATION
     %----------------------------------------------------------------------------------------
+    
     \newcommand{\maintitle}{License Plate Recognizer}
     \newcommand{\course}{Numerical Calculations for Engineering}
     \newcommand{\coursenumber}{International Semester}
@@ -142,29 +188,33 @@
     \subfile{sections/section2.tex}
 
     %\section{Component Overview}
-    %\subfile{sections/section3.tex}
+    \subfile{sections/section3.tex}
 
     %\section{Tests and Results}
-    %\subfile{sections/section4.tex}
+    \subfile{sections/section4.tex}
 
     %\section{Development proces}
     \subfile{sections/section5.tex}
 
     %\section{Critical Reflection}
-    %\subfile{sections/section6.tex}
+    \subfile{sections/section6.tex}
 
-    %\section{conclusion}
-    %\subfile{sections/section7.tex}
-    
+    %\section{Conclusion}
+    \subfile{sections/section7.tex}
+
     %\section{Possible Extensions}
-    %\subfile{sections/section8.tex}
+    \subfile{sections/section8.tex}
 
     %%------------------------------ REAL REPORT ----------------------------
 
     %%------------------------------- AFTERMATH -----------------------------
 
-    %\section{Bibliography}
+    \section{Bibliography}
+    \bibliography{main}{}
+    \bibliographystyle{plain}
     %\section{Appendix}
+    \subfile{sections/appendix.tex}
+    %\subfile{sections/appendix.tex}
 
     %%------------------------------- AFTERMATH -----------------------------
     
