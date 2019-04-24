@@ -1,0 +1,11 @@
+\babel@toc {nil}{}
+\contentsline {section}{Introduction}{I}
+\contentsline {section}{\numberline {1}Problem Introduction}{1}
+\contentsline {subsection}{\numberline {1.1}Description}{1}
+\contentsline {subsection}{\numberline {1.2}Matlab functionality}{1}
+\contentsline {subsection}{\numberline {1.3}Goals and Objectives}{1}
+\contentsline {subsection}{\numberline {1.4}Possible Extensions}{1}
+\contentsline {subsubsection}{\numberline {1.4.1}Moving Images}{1}
+\contentsline {subsubsection}{\numberline {1.4.2}CUDA}{2}
+\contentsline {section}{\numberline {2}Problem Breakdown}{2}
+\contentsline {section}{\numberline {3}Development proces}{2}

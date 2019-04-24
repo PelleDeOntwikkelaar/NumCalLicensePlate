@@ -4,17 +4,20 @@
 % process is done in this script.
 clear all;
 
-% Step 1 -- Image Manipulation --
+% Step 1 -------------------- Image Manipulation --------------------
 
+% image name is loaded into the workspace.
 imageName='lp2.jpg';
+% image manipulation script is used.
 imageManipulation;
+
 % Two properties 'BoundingBox' and binary 'Image' corresponding to these
 % Bounding boxes are acquired.
 Iprops=regionprops(final,'BoundingBox','Image');
 % Selecting all the bounding boxes in matrix of order numberofboxesX4;
 NR=cat(1,Iprops.BoundingBox);
 
-% Step 2 -- Starting the search for parts off the license plate --
+% Step 2 ------ Starting the search for parts off the license plate ------
 % Calling of controlling function.
 
 % Function 'controlling' outputs the array of indices of boxes required for extraction of characters.

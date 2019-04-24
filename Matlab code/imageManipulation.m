@@ -1,8 +1,8 @@
 % Pelle Reynierss
 % Step 1: imageManipulation
 % This script is used to manipulated the input image.
-% After this script the image will be in a form that can be read by the 
-% other Matlab scripts later in the project.
+% After this script the image will be in a form that can be read and  
+% interpreted by the other Matlab scripts later in the project.
 
 % Image manipulation consists of the following steps:
 % - Read the image into the system
