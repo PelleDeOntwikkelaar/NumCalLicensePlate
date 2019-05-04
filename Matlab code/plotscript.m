@@ -16,3 +16,15 @@ title('Greyscale With Eroding.');
 
 figure('Name','Image All Edges detected');
 imshow(gdiff);
+
+figure('Name','H and F');
+subplot(1,2,1);
+imshow(F);
+title('Regions are filled.');
+subplot(1,2,2);
+imshow(H);
+title('Thinnend out image.');
+
+figure('Name','End image manipulation');
+imshow(final);
+

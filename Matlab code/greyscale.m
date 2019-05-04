@@ -14,7 +14,7 @@ try
     else
         rgbImage = X;
     end
-    rgbImage=imresize(rgbImage,[400 NaN]); % Resizing the image.
+    rgbImage=imresize(rgbImage,[600 NaN]); % Resizing the image.
     [rows, columns, numberOfColorChannels] = size(rgbImage);
     if numberOfColorChannels  == 3 % this doesn't work with RGBa
         % split the different color channels

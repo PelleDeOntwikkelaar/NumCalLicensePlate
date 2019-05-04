@@ -4,10 +4,10 @@
 % process is done in this script.
 clear all;
 
-% Step 1 -------------------- Image Manipulation --------------------
+% Part 1 -------------------- Image Manipulation --------------------
 
 % image name is loaded into the workspace.
-imageName='lp2.jpg';
+imageName='lp4.jpg';
 % image manipulation script is used.
 imageManipulation;
 
@@ -17,11 +17,13 @@ Iprops=regionprops(final,'BoundingBox','Image');
 % Selecting all the bounding boxes in matrix of order numberofboxesX4;
 NR=cat(1,Iprops.BoundingBox);
 
-% Step 2 ------ Starting the search for parts off the license plate ------
+% Part 2 ------ Starting the search for parts off the license plate ------
 % Calling of controlling function.
 
-% Function 'controlling' outputs the array of indices of boxes required for extraction of characters.
+% Function 'controlling' outputs the array of indices of boxes required 
+% for extraction of characters.
 r=controlling(NR); 
+% Match indices to letters/numbers.
 if ~isempty(r) % If succesfully indices of desired boxes are achieved.
     I={Iprops.Image}; % Cell array of 'Image' (one of the properties of regionprops)
     noPlate=[]; % Initializing the variable of number plate string.
@@ -41,7 +43,6 @@ if ~isempty(r) % If succesfully indices of desired boxes are achieved.
     fid = fopen('noPlate.txt', 'wt'); % This portion of code writes the number plate
     fprintf(fid,'%s\n',noPlate);      % to the text file, if executed a notepad file with the
     fclose(fid);                      % name noPlate.txt will be open with the number plate written.
-    winopen('noPlate.txt')
     
 
     

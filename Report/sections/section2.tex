@@ -28,7 +28,23 @@ Each of these steps can be considerd a sub problem.
     \item \label{sub:uniform} \textbf{Uniform:} Transform the image to a uniform dimension. In this way all images from this point on have accactly the same characteristics.  
     \item \label{sub:greyscale} \textbf{Greyscale:} Transform the image to a greyscale version off itself.
     \item \label{sub:noise} \textbf{Noise:} Removal of possible noise in the picture.
-    \item \label{sub:detectAllEdges}\textbf{Edges: }Detecting off all the possible edges in an image.
+    \item \label{sub:detectAllEdges} \textbf{Edges: }Detecting off all the possible edges in an image.
+    \item \label{sub:clearEdges} \textbf{Clear edges: }Clear the image to make detected lines the only visible things.
+    \item \label{sub:fillRegions} \textbf{Fill edges: }Detect non straight edges and fill them.
 \end{enumerate}
 \subsection{The Search}
+Before getting into the search, first a few words of explenation about the divide between the image manipulation and search process.
+We live in a world were a lot of things are the same in the whole world, a few of them are: the use of license plates, the need for speed control, and things in these categories.
+When looking at license plates, although the concept of a license plate seems universal, it is easy to recognize that they are different around the world.
+Some of them have only letters, others have two letter and four numbers, etc.
+Even inside the european union there are a lot of differences. 
+When building a license plate recognizer it is clear to see that a big part of the process will not change: this is the regnizing of edges and filling possible areas.
+This will always result in an image with intersting areas coloured in, no matter the composition of the licinseplate to be found.
+It is because of this fact that I divided search and image manipulation.
+No matter which (country) licenseplate that has to be found. The image manipulation part will always be the same.
+\begin{enumerate}
+    \item 
+\end{enumerate}
+
+
 \subsection{Evaluation}

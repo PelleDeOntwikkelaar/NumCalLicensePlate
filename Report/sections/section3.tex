@@ -8,7 +8,7 @@ TODO: WRITE SUBSECTION ABOUT OVERVIEW OF THE TOTAL PROJECT.
 Here follows an implementation of all the subproblems introduced in the previous section.
 Before starting with discussing the different sub problems, the objective of this phase is transforming the image to a new image were the following thing has happend: edgde detection to define possible areas where the license plate can be.
 To do this, the subproblems defined in the previous section, subsection image manipulation are implemntated.
-This implementation is shown in the current sub section.
+This implementation is shown in the current sub section. The corresponding matlab code can be found in listing~\vref{imageManipulation}.
 \subsubsection{Image Preparation}
 First steps are making the image uniform and removing the color without losing elements in the picture.
 The color removing is called greyscaling. 
@@ -69,7 +69,7 @@ Imagine to have a neighborhoud that looks like a cicrle with radius of a few pix
 This \textit{strel} is moving over an image, when it covers an aerea with the same rgb value, the system nows it is in an area without a border.
 But when the \textit{strel} is in an area that is covered with more than one different value, it is clear that their is a border present.
 When there is a pixel of the \textit{strel} that has a lighter value \footnote{Lighter in greyscale value means a higher value} than the center pixel, the value of this center pixel becomes this lighter value.
-When this is done on an image, the lighter areas on the image will become bigger.
+When this is performed on an image, the lighter areas on the image will become bigger.
 This is shown in figure~\vref{fig:dilate}.
 \begin{figure}
     \centering
@@ -83,7 +83,7 @@ Imagine to have a neighborhoud that looks like a cicrle with radius of a few pix
 This \textit{strel} is moving over an image, when it covers an aerea with the same rgb value, the system nows it is in an area without a border.
 But when the \textit{strel} is in an area that is covered with more than one different value, it is clear that their is a border present.
 When there is a pixel of the \textit{strel} that has a darker value \footnote{Darker in greyscale value means a lower value} than the center pixel, the value of this center pixel becomes this darker value.
-When this is done on an image, the lighter areas on the image will become smaller.
+When this is performed on an image, the lighter areas on the image will become smaller.
 This is shown in figure~\vref{fig:erode}.
 \begin{figure}
     \centering
@@ -102,4 +102,46 @@ The result of this is shown in figure~\vref{fig:de}.
     \label{fig:de}
 \end{figure}
 With this result we can conclude that subproblem~\vref{sub:detectAllEdges} is solved.
+\par
+With a quick recap we can recognize the fact that at this point we have an image with recognized edges.
+However the goal of the image manipulation part is delivering interesting regions where to search for a license plate.
+To get to that point there are two more necesairy sub problems to solve: clear edges and delete non interesting edges, fill the interesting edges.
+We start with clearing the image. 
+The start point is an image as shown in figure~\vref{fig:de}.
+To make a difference between the different kind of edges, it is necesairy to embrighten the edges and completely endarken the rest of the picture.
+This is possible by making the contrast bigger and than convert the image to a binary map.
+By using a binary map, there are only two options: a border or no border, a 1 or a 0.
+When converting the binary map back to a "normal" image we are now shore we have an image with only the borders/edges present.
+The result at this point is an image with only clear edges, therefor it is safe to say that the objective of subproblem~\vref{sub:clearEdges} are achieved.
+
 \subsubsection{Filling}
+As stated in the previous paragraph, the objective of the image manipulation is the presentation of interesting regions.
+What are interesting regions in the picture? Regions that possible contain a number or letter. 
+A property of numbers and letters is that they mostly do not have a lot of straight lines. especially no single straight lines.
+With this property in mind we can use another \textit{strel} function to remove straight lines. 
+Instead of using a disk size strel, it is possible to use a linear strel, this will help detect the non interesting edges.
+With the function \textit{imfill()}, it is possible to fill enclosed regions in the image. 
+This is applied to the image, in theory, every enclosed region can be a letter or a number.
+Non filled edges are thinnend out with the result that the difference between them becomes bigger.
+Results off these manipulations are shown in figure~\vref{fig:hf}.
+These manipulations are combinend with the earlier talked about linear edge removal.
+An example of the final result after image manipulation is shown in figure~\vref{fig:finalim}.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{hf.png}
+    \caption{Example of region filling and thinning out the image.}
+    \label{fig:hf}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{finalim.png}
+    \caption{Example of the final result after image manipulation.}
+    \label{fig:finalim}
+\end{figure}
+
+\subsection{The Search}
+The use of making a difference between image manipulation and the search is explained in the "Problem Breakdown" section.
+In this subsection follows a detailed explenation of how the search works and how to adapt the search to different licenseplate layouts.
+
+
+

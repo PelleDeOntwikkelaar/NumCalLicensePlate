@@ -150,7 +150,7 @@
     
     \begin{center}
     \begin{tabular}{l r}
-    Due Date: & 17 May 2019 \\ % Date the experiment was performed
+    Due Date: & 6 May 2019 \\ % Date the experiment was performed
     \\
     Class : & \class \\
     \\
@@ -166,6 +166,10 @@
     %%------------------------------ ROMAN PART -----------------------------
     
     \pagenumbering{Roman}
+    \section*{Abstract}
+    \subfile{sections/abstract.tex}
+    \addcontentsline{toc}{section}{Abstract}
+    \newpage
     \section*{Introduction}
     \subfile{sections/section0.tex}
     \addcontentsline{toc}{section}{Introduction}
@@ -175,6 +179,8 @@
     \newpage
     \lstlistoflistings
     \newpage
+    \listoffigures
+    \newpage
 
     %%------------------------------ ROMAN PART -----------------------------
 
@@ -183,12 +189,15 @@
 
     %\section{Problem Introduction}
     \subfile{sections/section1.tex}
+    \newpage
 
     %\section{Problem Breakdown}
     \subfile{sections/section2.tex}
+    \newpage
 
     %\section{Component Overview}
     \subfile{sections/section3.tex}
+    \newpage
 
     %\section{Tests and Results}
     \subfile{sections/section4.tex}
