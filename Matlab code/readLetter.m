@@ -1,4 +1,4 @@
-function letter=readLetter(snap)
+function [letter, maxcor]=readLetter(snap)
 %READLETTER reads the character fromthe character's binary image.
 %   LETTER=READLETTER(SNAP) outputs the character in class 'char' from the
 %   input binary image SNAP.
@@ -11,82 +11,83 @@ for n=1:length(NewTemplates)
     comp=[comp sem]; % Record the value of correlation for each template's character.
 end
 vd=find(comp==max(comp)); % Find the index which correspond to the highest matched character.
+maxcor=max(comp);
 %*-*-*-*-*-*-*-*-*-*-*-*-*-
 % Accodrding to the index assign to 'letter'.
 % Alphabets listings.
 if vd==1 || vd==2
-    letter='A';
+    letter=65;
 elseif vd==3 || vd==4
-    letter='B';
+    letter=66;
 elseif vd==5
-    letter='C';
+    letter=67;
 elseif vd==6 || vd==7
-    letter='D';
+    letter=68;
 elseif vd==8
-    letter='E';
+    letter=69;
 elseif vd==9
-    letter='F';
+    letter=70;
 elseif vd==10
-    letter='G';
+    letter=71;
 elseif vd==11
-    letter='H';
+    letter=72;
 elseif vd==12
-    letter='I';
+    letter=73;
 elseif vd==13
-    letter='J';
+    letter=74;
 elseif vd==14
-    letter='K';
+    letter=75;
 elseif vd==15
-    letter='L';
+    letter=76;
 elseif vd==16
-    letter='M';
+    letter=77;
 elseif vd==17
-    letter='N';
+    letter=78;
 elseif vd==18 || vd==19
-    letter='O';
+    letter=79;
 elseif vd==20 || vd==21
-    letter='P';
+    letter=80;
 elseif vd==22 || vd==23
-    letter='Q';
+    letter=81;
 elseif vd==24 || vd==25
-    letter='R';
+    letter=82;
 elseif vd==26
-    letter='S';
+    letter=83;
 elseif vd==27
-    letter='T';
+    letter=84;
 elseif vd==28
-    letter='U';
+    letter=85;
 elseif vd==29
-    letter='V';
+    letter=86;
 elseif vd==30
-    letter='W';
+    letter=87;
 elseif vd==31
-    letter='X';
+    letter=88;
 elseif vd==32
-    letter='Y';
+    letter=89;
 elseif vd==33
-    letter='Z';
+    letter=90;
     %*-*-*-*-*
 % Numerals listings.
 elseif vd==34
-    letter='1';
+    letter=31;
 elseif vd==35
-    letter='2';
+    letter=32;
 elseif vd==36
-    letter='3';
+    letter=33;
 elseif vd==37 || vd==38
-    letter='4';
+    letter=34;
 elseif vd==39
-    letter='5';
+    letter=35;
 elseif vd==40 || vd==41 || vd==42
-    letter='6';
+    letter=36;
 elseif vd==43
-    letter='7';
+    letter=37;
 elseif vd==44 || vd==45
-    letter='8';
+    letter=38;
 elseif vd==46 || vd==47 || vd==48
-    letter='9';
+    letter=39;
 else
-    letter='0';
+    letter=30;
 end
 end

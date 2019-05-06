@@ -286,6 +286,9 @@ INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculat
 INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/images/finalim.png
 INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/images/finalim.png
 INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/images/finalim.png
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/images/hist.png
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/images/hist.png
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/images/hist.png
 INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/sections/section4.tex
 INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/sections/section4.tex
 INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/sections/section5.tex
@@ -300,10 +303,10 @@ INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculat
 INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/main.bbl
 INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/sections/appendix.tex
 INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/sections/appendix.tex
-INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/greyscale.m
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/ReadLicensePlate.m
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmtt9.tfm
-INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/greyscale.m
-INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/greyscale.m
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/ReadLicensePlate.m
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/ReadLicensePlate.m
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1pcr.fd
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1pcr.fd
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/courier/pcrro8t.tfm
@@ -311,11 +314,20 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmss9.tfm
-INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/imageManipulation.m
-INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/imageManipulation.m
-INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/imageManipulation.m
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/greyscale.m
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/greyscale.m
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/greyscale.m
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/courier/pcrro8t.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/courier/pcrro8r.tfm
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/imageManipulation.m
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/imageManipulation.m
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/imageManipulation.m
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/findIndices.m
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/findIndices.m
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/findIndices.m
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/eliminateOptions.m
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/eliminateOptions.m
+INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/eliminateOptions.m
 INPUT /Users/pellereyniers/Box Sync/KULeuven 2018-2019/Madrid/Numerical Calculations/project/Report/main.aux
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb

@@ -25,8 +25,8 @@ for k=1:length(NR)            % Taking the advantage of uniqueness of y-co
 end
 NR2=cat(2,NR,C_5');           % Appending new coloumn in NR.
 [E,R]=hist(NR2(:,5),20);
-%Y=find(E==6);                 % Searching for six characters.
-Y=[];
+Y=find(E==6);                 % Searching for six characters.
+
 if length(ind)==1 % If six boxes of interest are succesfully found record
     MP=W(ind);    %  the midpoint of corresponding bin.
     binsize=W(2)-W(1); % Calculate the container size.

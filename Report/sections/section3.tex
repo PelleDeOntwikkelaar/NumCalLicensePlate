@@ -2,8 +2,26 @@
 \section{Component Overview}
 
 \subsection{Project Overview}
-TODO: WRITE SUBSECTION ABOUT OVERVIEW OF THE TOTAL PROJECT.
-
+In this subsection follows a description about the structure of the scripts.
+The main script is called \textit{ReadLicensePlate.m} and can be found in listing~\vref{ReadLicensePlate}. 
+In this script are a few things defined: 
+\begin{itemize}
+    \item The name of the input file.
+    \item The amount of characters in a license plate.
+    \item The amount of letters in a license plate.
+\end{itemize}
+The three different parts of this project are really visible in this script.
+The first part: Image Manipulation is done in a different script but started from \textit{ReadLicensePlate.m}.
+The second part: The search, also started in \textit{ReadLicensePlate.m}, is also mostly done in other scripts.
+The last part: evaluation is done outside this script. 
+The Image manipulation script can be found in listing~\vref{imageManipulation}.
+This script uses only one custom made function, defined in listing~\vref{greyscale}.
+Part two starts with calling the function findIndices, the script with the matlab code can be found in listing~\vref{findIndices}.
+The \textit{findIndices.m} function returns a possible license plate, to get to this license plate the function makes use of an other matlab function called \textit{eliminateOptions.m}.
+The code corresponding to this function can be found in listing~\vref{eliminateOptions}.
+Afterwards everything returns to the main script \textit{ReadLicensePlate.m}.
+This is in large lines the structure of the project.
+Ofcourse there are other scripts used for extra functions like matching a container to a letter, but the large parts are explained above.
 \subsection{Image Manipulation Components}
 Here follows an implementation of all the subproblems introduced in the previous section.
 Before starting with discussing the different sub problems, the objective of this phase is transforming the image to a new image were the following thing has happend: edgde detection to define possible areas where the license plate can be.
@@ -138,10 +156,77 @@ An example of the final result after image manipulation is shown in figure~\vref
     \caption{Example of the final result after image manipulation.}
     \label{fig:finalim}
 \end{figure}
+Before starting with the search part, one adition is done to the image manipulation.
+The function \textit{Iprops()} is called on the final result from the image manipulation.
+This function produces containers over all the the different interesting parts in the pictures.
+Two parts of this function are very intersting for the use in this case.
+The tag 'Bounding Box', this produces practical information about the container in the form of four elements:
+\begin{itemize}
+    \item Starting X coordinate.
+    \item Starting Y coordinate.
+    \item Height.
+    \item Width.
+\end{itemize}
+In that way are the complete dimensions of the container given.
+The second tag is 'Image', this produces the image corresponding to the container dimensions.
+Now all the elements are there to start the search operation.
 
 \subsection{The Search}
 The use of making a difference between image manipulation and the search is explained in the "Problem Breakdown" section.
 In this subsection follows a detailed explenation of how the search works and how to adapt the search to different licenseplate layouts.
 
+\subsubsection{Find Candidates}
+The main objective is also the biggest question, how do start searching in the picture.
+We know we have a picture with the regions selected but how can we confident say which regions to skip?
+The answer to this question can partly be found in the knowledge we have about the containers.
+We can assume the following: the containers corresponding to the different characters of the licenseplate will be in the samen Y dimension.
+So if it is possible to filter the containers on Y dimension it will be clear which regions are intersting and have possibly the licenseplate.
+\par 
+From the main script \textit{ReadLicensePlate.m}, listing~\vref{readLicensPlate}, the function \textit{findIndices} is called.
+In this function, the sorting in regions start.
+This is possible using th \textit{hist()} function, with parameter the Y starting point of the different containers.
+The hist function makes a histogram, standard dividing the complete range into 10 parts.
+This function uses a bucketsort mechanism.\footnote{BucketSort is a fast but not so precise sorting algorithm.}
+After executing this function it is possible to see how much containers there are in every region.
+Because the specifics of the license plate are given in the main script, it is justified to say that all regions with less containers than total license plate caracters are not interesting.
+In this way we only keep the regions with a lot of containers.
+\par
+Only filtering on Y coordinate is not enough.
+It is safer to make a safety mechanism with another factor.
+By multiplying the Y coordinate with the width of the container we get a new factor to filter.
+This second factor is used as a backup when the first filter is unable to give usefull results.
+\par
+After the filtering, all the regions with at least as many items as ther have to be characters in the license plate, are selected.
+Every region is looked into.
+The histogram corresponding to the example used in the image manipulation can befound in figure~\vref{fig:hist}.
+The next major challenge is that regions can have more containers than that there are characters.
+A selection procedure is necesairy to select which of these containers are not part of the licenseplate.
+This selection is done in the function \textit{eliminateOptions}.
+The function gets the selection of containers as input as well as the images corresponding to these containers, the amount of characters in a license plate and the amount of letters in a licenseplate.
+This function is run in a for-loop on every interesting region.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\linewidth]{hist.png}
+    \caption{Histogram corresponding to the picture used in the image manipulation example.}
+    \label{fig:hist}
+\end{figure}
+
+\subsubsection{Testing}
+The testing happens in the function \textit{eliminateOptions}, can be found in listing~\vref{eliminateOptions}.
+All containers in the region are matched to a character, by the function \textit{readLetter}.
+This function not only returns the letter that is matched to the corresponding container but also the correlation factor.
+This correlation factor is very important because after the matching, the filtering has to start.
+The filtering of the containers is done in a while loop and continous as long as there are more characters left than that there are in a licenseplate.
+In every iteration of the while loop will the character with the lowest correlation be tracked down and deleted.
+In this way it is safe to say that the best option for this region will come out of this function.
+
+\subsubsection{Choice}
+This subproblem is solved in the function \textit{ReadLicensePlate}.
+After the for-loop done on all possible regions, we have a possible license plate for every interesting region.
+Except for the license plate, the function \textit{findIndices} also returned an average correlation factor for the complete licenseplate.
+This average factor is used to select the licenseplate with the highest possiblity.
+At this point the system returns the licenseplate found in the original picture and this is therefor the end of the system.
+The system returns the licenseplate in ascii code, what means that these are not the character values but this is easier if the matlab scripts are ever going to be used in another software program.
+Also most languages support an easy conversion from ascii code to character value.
 
 

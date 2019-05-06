@@ -43,8 +43,29 @@ This will always result in an image with intersting areas coloured in, no matter
 It is because of this fact that I divided search and image manipulation.
 No matter which (country) licenseplate that has to be found. The image manipulation part will always be the same.
 \begin{enumerate}
-    \item 
+    \item \textbf{Find candidates:} this subproblem is the deliverance of X containers that are possibly part of the license plate.
+    \item \textbf{Test: } testing of the different candidate sets. 
+    \item \textbf{Choice: } Make a choice which solution is the most predictable.
 \end{enumerate}
-
-
+These are only three sub problems but they are larger in proportion than the subproblems handeld in the Image Manipulation section.
+The span multiple functions and files, it is possible to say that each of these problmens have own sub problems.
+Therefor are they maybe not in line with how I defined subproblems through this project.
+Further in this subsection follows a more in detail division for every subproblem.
+\subsubsection{Find Candidates}
+This subproblem can be furthet divided into the following subproblems:
+\begin{enumerate}
+    \item \textbf{Regions: } Which regions with containers are intersting.
+    \item \textbf{Selection: } Filter every intersting region.
+\end{enumerate}
+It is difficult to furder split all the possible subproblems because of the overlap.
 \subsection{Evaluation}
+The evaluation part is straight forward. 
+There is only one goal:
+\begin{enumerate}
+    \item \textbf{Evaluate: } define a function that really tests all parts of the matlab script.
+\end{enumerate}
+\par
+This were all the sub problems for this project.
+In the next section is every problem going to be discussed in a proper way. 
+It is normal that a lot of the causes are not clear and completely understood.
+The main objective of this section was giving a brief overview and also some structure to relate back to in future sections.
