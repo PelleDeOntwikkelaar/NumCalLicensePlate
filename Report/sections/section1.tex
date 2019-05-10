@@ -4,7 +4,7 @@
 The general information about the project reported in this documented is presented in this section.
 \subsection{Description}
 In recent years or decade, a new way of traffic/speed control is introduced. 
-The so called trajectory control. 
+The so called trajectory control \cite{dxcTech}. 
 This way of traffic control exists in monitoring traffic at entry and exit points of a given trisect.
 With monitoring is meant the identification of vehicles. 
 In this case cameras are used with a computer system that recognizes license plates.
@@ -13,29 +13,28 @@ In general this method of speed control is better than normal one point control 
 This system can be used for a lot more than just speed control. 
 By analyzing data, conclusion can be drawn why people change lanes, etc. 
 Maybe it will become possible to predict traffic jams, accidents etc. 
-Both present systems and futuristic extension relay on the basic principle of licenseplate recognition from images.
+Both present systems and futuristic extension relay on the basic principle of license plate recognition from images.
 This is a very interesting and also fundamental subject in the modern world.
 
 \subsection{Matlab functionality}
 The recognizing of license plates is no more than an Image processing problem.
-This is possible with Matlab because in digital terms a photo is a matrix of values and can be analyzed.
+This is possible with Matlab because in digital terms a photo is a matrix of values and can be analyzed.\cite{rgbWiki}\cite{imreadMat}
 Matrix manipulation is very straight forward in Matlab, you could say Matlab is build for Matrix manipulation.
 In this way is this a perfect example as a Matlab project.
 
 \subsection{Goals and Objectives}
 For a project of any size it is very important to clearly define the goals.
-This gives a clear view off direction, wheter the project consists of research, development or even experiments.
+This gives a clear view off direction, whether the project consists of research, development or even experiments.
 \begin{itemize}
     \item Creating a script that manipulates the images so the license plate becomes clear.
-    \item Creating a script that returns the licenseplate when (in string format) when a picture is given as input.
-    \item Creating a script capable of recognizing the land code.
+    \item Creating a script that returns the license plate when (in string format) when a picture is given as input.
     \item Provided enough test data and results to confirm all stated conclusions.
 \end{itemize}
 \subsection{Possible Extensions}
-Further in this report is a larger section devotad to possible extensions, this is only a fortaste.
+Further in this report is a larger section devoted to possible extensions, this is only a foretaste.
 \subsubsection{Moving Images}
 In real life this system works with cameras so with image processing on frames.
 An extension can be giving an input of video files instead of just pictures.
 \subsubsection{CUDA}
-CUDA is a programming language built on top of C that lets the user control the Graphic processor.
-Because image processing contains a lot of parallel calculations, it can be interesting to see what the gain is when executing on a GPU.
+CUDA is a programming language built on top of C that lets the user control the Graphic processor.\cite{nvidiaCuda}
+Because image processing contains a lot of parallel calculations, it can be interesting to see what the gain is when executing on a GPU.\cite{matCUDA}

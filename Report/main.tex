@@ -4,6 +4,8 @@
 % - Gilles Callebaut
 % - Guus Leenders
 % - Stijn Crul
+% - Pelle Reyniers
+% - Wouter Legiest
 %
 % Original author:
 % Linux and Unix Users Group at Virginia Tech Wiki
@@ -23,14 +25,14 @@
     
     \usepackage{siunitx} % Provides the \SI{}{} and \si{} command for typesetting SI units
     \usepackage{graphicx} % Required for the inclusion of images
-    \usepackage{natbib} % Required to change bibliography style to APA
+    %\usepackage{natbib} % Required to change bibliography style to APA
     \usepackage{amsmath} % Required for some math elements
     \usepackage{lastpage} % know last page (used in fancy header)
     \usepackage{babel}
     \usepackage{float}
-    \usepackage{cite}
+    %\usepackage{cite}
     \usepackage[usenames,dvipsnames]{xcolor}
-    \setcitestyle{numbers,super}
+    %\setcitestyle{numbers,super}
     \usepackage{fancyhdr} % Fancy Header
     \usepackage[xindy, toc, numberedsection]{glossaries} % glossaries with xindy (recommended) for the indexing phase and show glossaries in TOC, and numberedsection to get a Setion number in the title
     \usepackage{url} %The command is intended for email addresses, hypertext links, directories/paths, etc., which normally have no spaces, so by default the package ignores spaces in its argument.
@@ -54,7 +56,7 @@
     
     \setlength\parindent{0pt} % Removes all indentation from paragraphs
     
-    \renewcommand{\labelenumi}{\alph{enumi}.} % Make numbering in the enumerate environment by letter rather than number (e.g. section 6)
+    %\renewcommand{\labelenumi}{\alph{enumi}.} % Make numbering in the enumerate environment by letter rather than number (e.g. section 6)
     
     \renewcommand{\arraystretch}{1.2} % Increasing the array stretch factor using \renewcommand{\arraystretch}{<factor>} where <factor> is a numeric value
     
@@ -125,7 +127,9 @@
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% HEADER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     
     
-    %%------------------------------ TITLE PAGE -----------------------------
+    %----------------------------------------------------------------------------------------
+    %	TITLE PAGE
+    %----------------------------------------------------------------------------------------
     \title{\maintitle \\ \course \\{\small\ \coursenumber}} % Title
     
     \author{Pelle \textsc{Reyniers} \\ } % Author name
@@ -150,7 +154,7 @@
     
     \begin{center}
     \begin{tabular}{l r}
-    Due Date: & 6 May 2019 \\ % Date the experiment was performed
+    Due Date: & 9 May 2019 \\ % Date the experiment was performed
     \\
     Class : & \class \\
     \\
@@ -161,9 +165,10 @@
     \end{titlepage}
     \clearpage
     
-    %%------------------------------ TITLE PAGE -----------------------------
     
-    %%------------------------------ ROMAN PART -----------------------------
+    %----------------------------------------------------------------------------------------
+    %	ROMAN PART OF THE REPORT
+    %----------------------------------------------------------------------------------------
     
     \pagenumbering{Roman}
     \section*{Abstract}
@@ -177,14 +182,15 @@
     \newpage
     \tableofcontents
     \newpage
-    \lstlistoflistings
-    \newpage
     \listoffigures
+    \addcontentsline{toc}{section}{List of Figures}
+    \lstlistoflistings
+    \addcontentsline{toc}{section}{List of Listings}
     \newpage
 
-    %%------------------------------ ROMAN PART -----------------------------
-
-    %%------------------------------ REAL REPORT ----------------------------
+    %----------------------------------------------------------------------------------------
+    %	REAL REPORT
+    %----------------------------------------------------------------------------------------
     \pagenumbering{arabic}
 
     %\section{Problem Introduction}
@@ -219,25 +225,18 @@
     \subfile{sections/section8.tex}
     \newpage
 
-    %%------------------------------ REAL REPORT ----------------------------
-
-    %%------------------------------- AFTERMATH -----------------------------
-
-    \bibliography{main}{}
-    \bibliographystyle{plain}
+    %----------------------------------------------------------------------------------------
+    %	AFTERMATH
+    %----------------------------------------------------------------------------------------
+	\appendix
+	\bibliographystyle{ieeetr}
+    \bibliography{main}
+    \addcontentsline{toc}{section}{References}
     \newpage
     %\section{Appendix}
     \subfile{sections/appendix.tex}
     %\subfile{sections/appendix.tex}
 
-    %%------------------------------- AFTERMATH -----------------------------
-    
-
-
-
-    
-    
     \clearpage
-    
     \end{document}
     

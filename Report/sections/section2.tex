@@ -1,68 +1,68 @@
 \documentclass[main.tex]{subfiles}
 \section{Problem Breakdown}
-In this section the general problem is brought down to simpilar and smaller sub problems.
-The goals of this section is not making more objectives but making a clear and good dividence in the project.
-Important in breaking down a problem is th clear definition off the sub problems.
+In this section the general problem is brought down to simpler and smaller sub problems.
+The goals of this section is not making more objectives but making a clear and good dividends in the project.
+Important in breaking down a problem is the clear definition off the sub problems.
 It has to be very clear what every part consists off and most important when a sub problem is solved.
-Out off this last defintion follows that it has to be possible to test every different sub problem in a convenient way.
+Out off this last definition follows that it has to be possible to test every different sub problem in a convenient way.
 To summarize: a project consists off different sub problems which all have the following.
 \begin{itemize}
     \item Title
     \item Clear and simple objective.
-    \item Orientation whitin the whole project.
+    \item Orientation within the whole project.
     \item Test conditions.
 \end{itemize}
 Multiple sub problems can be combined into a project phase.
-When talking about project phases, the following phases can be defined, there is a large resemblance with the goals defind in the previous section.
+When talking about project phases, the following phases can be defined, there is a large resemblance with the goals defined in the previous section.
 \begin{itemize}
-    \item Image manipulation: Manipulate the input image to a form where it is easy to start the proces of finding the license plate.
-    \item The search: The search off the interire (manipulated) image to the license plate.
+    \item Image manipulation: Manipulate the input image to a form where it is easy to start the process of finding the license plate.
+    \item The search: The search off the entire (manipulated) image to the license plate.
     \item Evaluation: Confirmation or denial. 
 \end{itemize}
 These project phases each consist of multiple sub problems, these are defined in the following subsections.
 \subsection{Image manipulation}
 As earlier described consists this project phase of preparing the image for the search off a license plate.
 The preparation of this image consists of multiple steps.
-Each of these steps can be considerd a sub problem.
+Each of these steps can be considered a sub problem.
 \begin{enumerate}
-    \item \label{sub:uniform} \textbf{Uniform:} Transform the image to a uniform dimension. In this way all images from this point on have accactly the same characteristics.  
+    \item \label{sub:uniform} \textbf{Uniform:} Transform the image to a uniform dimension. In this way all images from this point on have actually the same characteristics.  
     \item \label{sub:greyscale} \textbf{Greyscale:} Transform the image to a greyscale version off itself.
-    \item \label{sub:noise} \textbf{Noise:} Removal of possible noise in the picture.
-    \item \label{sub:detectAllEdges} \textbf{Edges: }Detecting off all the possible edges in an image.
+    \item \label{sub:noise} \textbf{Noise:} Removal of possible noise in the picture.\cite{noiseRemovalMat}
+    \item \label{sub:detectAllEdges} \textbf{Edges: }Detecting off all the possible edges in an image.\cite{edgeDetMat}
     \item \label{sub:clearEdges} \textbf{Clear edges: }Clear the image to make detected lines the only visible things.
     \item \label{sub:fillRegions} \textbf{Fill edges: }Detect non straight edges and fill them.
 \end{enumerate}
 \subsection{The Search}
-Before getting into the search, first a few words of explenation about the divide between the image manipulation and search process.
+Before getting into the search, first a few words of explanation about the divide between the image manipulation and search process.
 We live in a world were a lot of things are the same in the whole world, a few of them are: the use of license plates, the need for speed control, and things in these categories.
 When looking at license plates, although the concept of a license plate seems universal, it is easy to recognize that they are different around the world.
 Some of them have only letters, others have two letter and four numbers, etc.
-Even inside the european union there are a lot of differences. 
-When building a license plate recognizer it is clear to see that a big part of the process will not change: this is the regnizing of edges and filling possible areas.
-This will always result in an image with intersting areas coloured in, no matter the composition of the licinseplate to be found.
+Even inside the European union there are a lot of differences. 
+When building a license plate recognizer it is clear to see that a big part of the process will not change: this is the recognizing of edges and filling possible areas.
+This will always result in an image with interesting areas coloured in, no matter the composition of the license plate to be found.
 It is because of this fact that I divided search and image manipulation.
-No matter which (country) licenseplate that has to be found. The image manipulation part will always be the same.
+No matter which (country) license plate that has to be found. The image manipulation part will always be the same.
 \begin{enumerate}
-    \item \textbf{Find candidates:} this subproblem is the deliverance of X containers that are possibly part of the license plate.
+    \item \textbf{Find candidates:} this sub problem is the deliverance of X containers that are possibly part of the license plate.
     \item \textbf{Test: } testing of the different candidate sets. 
     \item \textbf{Choice: } Make a choice which solution is the most predictable.
 \end{enumerate}
-These are only three sub problems but they are larger in proportion than the subproblems handeld in the Image Manipulation section.
-The span multiple functions and files, it is possible to say that each of these problmens have own sub problems.
-Therefor are they maybe not in line with how I defined subproblems through this project.
-Further in this subsection follows a more in detail division for every subproblem.
+These are only three sub problems but they are larger in proportion than the sub problems handled in the Image Manipulation section.
+The span multiple functions and files, it is possible to say that each of these problems have own sub problems.
+Therefor are they maybe not in line with how I defined sub problems through this project.
+Further in this subsection follows a more in detail division for every sub problem.
 \subsubsection{Find Candidates}
-This subproblem can be furthet divided into the following subproblems:
+This sub problem can be further divided into the following sub problems:
 \begin{enumerate}
-    \item \textbf{Regions: } Which regions with containers are intersting.
-    \item \textbf{Selection: } Filter every intersting region.
+    \item \textbf{Regions: } Which regions with containers are interesting.
+    \item \textbf{Selection: } Filter every interesting region.
 \end{enumerate}
-It is difficult to furder split all the possible subproblems because of the overlap.
+It is difficult to further split all the possible sub problems because of the overlap.
 \subsection{Evaluation}
 The evaluation part is straight forward. 
 There is only one goal:
 \begin{enumerate}
-    \item \textbf{Evaluate: } define a function that really tests all parts of the matlab script.
+    \item \textbf{Evaluate: } define a function that really tests all parts of the Matlab script.
 \end{enumerate}
 \par
 This were all the sub problems for this project.

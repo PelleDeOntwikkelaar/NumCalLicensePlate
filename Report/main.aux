@@ -4,106 +4,148 @@
 \babel@aux{nil}{}
 \@writefile{toc}{\contentsline {section}{Abstract}{I}}
 \@writefile{toc}{\contentsline {section}{Introduction}{II}}
+\@writefile{toc}{\contentsline {section}{List of Figures}{V}}
+\@writefile{toc}{\contentsline {section}{List of Listings}{V}}
+\citation{dxcTech}
+\citation{rgbWiki}
+\citation{imreadMat}
+\citation{nvidiaCuda}
+\citation{matCUDA}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Problem Introduction}{1}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Description}{1}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Matlab functionality}{1}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Goals and Objectives}{1}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.4}Possible Extensions}{1}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {1.4.1}Moving Images}{1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.4.2}CUDA}{2}}
-\@writefile{toc}{\contentsline {section}{\numberline {2}Problem Breakdown}{3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Image manipulation}{3}}
-\newlabel{sub:uniform}{{1}{3}}
-\newlabel{sub:greyscale}{{2}{3}}
-\newlabel{sub:noise}{{3}{3}}
-\newlabel{sub:detectAllEdges}{{4}{3}}
-\newlabel{sub:clearEdges}{{5}{3}}
-\newlabel{sub:fillRegions}{{6}{3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}The Search}{4}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}Find Candidates}{4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Evaluation}{4}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Component Overview}{5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Project Overview}{5}}
-\newlabel{1@xvr}{{}{5}}
-\newlabel{1@vr}{{}{5}}
-\newlabel{2@xvr}{{}{5}}
-\newlabel{2@vr}{{}{5}}
-\newlabel{3@xvr}{{}{5}}
-\newlabel{3@vr}{{}{5}}
-\newlabel{4@xvr}{{}{5}}
-\newlabel{4@vr}{{}{5}}
-\newlabel{5@xvr}{{}{5}}
-\newlabel{5@vr}{{}{5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Image Manipulation Components}{5}}
-\newlabel{6@xvr}{{}{5}}
-\newlabel{6@vr}{{}{5}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}Image Preparation}{5}}
-\newlabel{7@xvr}{{}{5}}
-\newlabel{7@vr}{{}{5}}
-\newlabel{8@xvr}{{}{5}}
-\newlabel{8@vr}{{}{5}}
-\newlabel{9@xvr}{{}{5}}
-\newlabel{9@vr}{{}{5}}
-\newlabel{10@xvr}{{}{6}}
-\newlabel{10@vr}{{}{6}}
-\newlabel{11@xvr}{{}{6}}
-\newlabel{11@vr}{{}{6}}
-\newlabel{eq:greyscale}{{1}{6}}
-\newlabel{12@xvr}{{}{6}}
-\newlabel{12@vr}{{}{6}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2}Edge Detection}{6}}
-\newlabel{13@xvr}{{}{6}}
-\newlabel{13@vr}{{}{6}}
-\newlabel{14@xvr}{{}{6}}
-\newlabel{14@vr}{{}{6}}
-\newlabel{15@xvr}{{}{6}}
-\newlabel{15@vr}{{}{6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Example of a strel neighborhoud.}}{7}}
-\newlabel{fig:strel}{{1}{7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Example of a dilated image.}}{7}}
-\newlabel{fig:dilate}{{2}{7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Example of a eroded image.}}{8}}
-\newlabel{fig:erode}{{3}{8}}
-\newlabel{16@xvr}{{}{8}}
-\newlabel{16@vr}{{}{8}}
-\newlabel{17@xvr}{{}{8}}
-\newlabel{17@vr}{{}{8}}
-\newlabel{18@xvr}{{}{8}}
-\newlabel{18@vr}{{}{8}}
-\newlabel{19@xvr}{{}{8}}
-\newlabel{19@vr}{{}{8}}
-\newlabel{20@xvr}{{}{8}}
-\newlabel{20@vr}{{}{8}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Example of an all edge detection}}{9}}
-\newlabel{fig:de}{{4}{9}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3}Filling}{9}}
-\newlabel{21@xvr}{{}{9}}
-\newlabel{21@vr}{{}{9}}
-\newlabel{22@xvr}{{}{9}}
-\newlabel{22@vr}{{}{9}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Example of region filling and thinning out the image.}}{10}}
-\newlabel{fig:hf}{{5}{10}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Example of the final result after image manipulation.}}{10}}
-\newlabel{fig:finalim}{{6}{10}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}The Search}{11}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1}Find Candidates}{11}}
-\newlabel{23@xvr}{{}{11}}
-\newlabel{23@vr}{{}{11}}
-\newlabel{24@xvr}{{}{11}}
-\newlabel{24@vr}{{}{11}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2}Testing}{11}}
-\newlabel{25@xvr}{{}{11}}
-\newlabel{25@vr}{{}{11}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Histogram corresponding to the picture used in the image manipulation example.}}{12}}
-\newlabel{fig:hist}{{7}{12}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.3}Choice}{12}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Tests and Results}{13}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Development proces}{14}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Critical Reflection}{15}}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{16}}
-\@writefile{toc}{\contentsline {section}{\numberline {8}Possible Extensions}{17}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.4.2}CUDA}{1}}
+\citation{noiseRemovalMat}
+\citation{edgeDetMat}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Problem Breakdown}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Image manipulation}{2}}
+\newlabel{sub:uniform}{{1}{2}}
+\newlabel{sub:greyscale}{{2}{2}}
+\newlabel{sub:noise}{{3}{2}}
+\newlabel{sub:detectAllEdges}{{4}{2}}
+\newlabel{sub:clearEdges}{{5}{2}}
+\newlabel{sub:fillRegions}{{6}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}The Search}{3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}Find Candidates}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Evaluation}{3}}
+\citation{rgbWiki}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Component Overview}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Project Overview}{4}}
+\newlabel{1@xvr}{{}{4}}
+\newlabel{1@vr}{{}{4}}
+\newlabel{2@xvr}{{}{4}}
+\newlabel{2@vr}{{}{4}}
+\newlabel{3@xvr}{{}{4}}
+\newlabel{3@vr}{{}{4}}
+\newlabel{4@xvr}{{}{4}}
+\newlabel{4@vr}{{}{4}}
+\newlabel{5@xvr}{{}{4}}
+\newlabel{5@vr}{{}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Image Manipulation Components}{4}}
+\newlabel{6@xvr}{{}{4}}
+\newlabel{6@vr}{{}{4}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}Image Preparation}{4}}
+\newlabel{7@xvr}{{}{4}}
+\newlabel{7@vr}{{}{4}}
+\newlabel{8@xvr}{{}{4}}
+\newlabel{8@vr}{{}{4}}
+\newlabel{9@xvr}{{}{4}}
+\newlabel{9@vr}{{}{4}}
+\citation{greyScaleRef}
+\citation{noiseRemovalMat}
+\citation{cudaGPU}
+\citation{edgeDetMat}
+\citation{greyScaleRef}
+\citation{0131873741}
+\citation{morphArticle}
+\citation{gonzalez2008digital}
+\citation{gonzalez2008digital}
+\newlabel{10@xvr}{{}{5}}
+\newlabel{10@vr}{{}{5}}
+\newlabel{11@xvr}{{}{5}}
+\newlabel{11@vr}{{}{5}}
+\newlabel{eq:greyscale}{{1}{5}}
+\newlabel{12@xvr}{{}{5}}
+\newlabel{12@vr}{{}{5}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2}Edge Detection}{5}}
+\newlabel{13@xvr}{{}{5}}
+\newlabel{13@vr}{{}{5}}
+\newlabel{14@xvr}{{}{5}}
+\newlabel{14@vr}{{}{5}}
+\newlabel{15@xvr}{{}{5}}
+\newlabel{15@vr}{{}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Example of a strel neighborhood.}}{6}}
+\newlabel{fig:strel}{{1}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Example of a dilated image.}}{6}}
+\newlabel{fig:dilate}{{2}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Example of a eroded image.}}{7}}
+\newlabel{fig:erode}{{3}{7}}
+\newlabel{16@xvr}{{}{7}}
+\newlabel{16@vr}{{}{7}}
+\newlabel{17@xvr}{{}{7}}
+\newlabel{17@vr}{{}{7}}
+\newlabel{18@xvr}{{}{7}}
+\newlabel{18@vr}{{}{7}}
+\newlabel{19@xvr}{{}{7}}
+\newlabel{19@vr}{{}{7}}
+\newlabel{20@xvr}{{}{7}}
+\newlabel{20@vr}{{}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Example of an all edge detection}}{8}}
+\newlabel{fig:de}{{4}{8}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3}Filling}{8}}
+\newlabel{21@xvr}{{}{8}}
+\newlabel{21@vr}{{}{8}}
+\newlabel{22@xvr}{{}{8}}
+\newlabel{22@vr}{{}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Example of region filling and thinning out the image.}}{9}}
+\newlabel{fig:hf}{{5}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Example of the final result after image manipulation.}}{9}}
+\newlabel{fig:finalim}{{6}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}The Search}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1}Find Candidates}{10}}
+\newlabel{23@xvr}{{}{10}}
+\newlabel{23@vr}{{}{10}}
+\newlabel{24@xvr}{{}{10}}
+\newlabel{24@vr}{{}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2}Testing}{10}}
+\newlabel{25@xvr}{{}{10}}
+\newlabel{25@vr}{{}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Histogram corresponding to the picture used in the image manipulation example.}}{11}}
+\newlabel{fig:hist}{{7}{11}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.3}Choice}{11}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Tests and Results}{12}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Development process}{13}}
+\citation{gonzalez2008digital}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Critical Reflection}{14}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}The objectives}{14}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Development process}{14}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{15}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Possible Extensions}{16}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Products}{16}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.1.1}The extra Objectives}{16}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.1.2}EU - proof}{16}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.1.3}Custom made products}{16}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}Extra Research}{16}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.2.1}Moving Images}{16}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.2.2}CUDA}{17}}
+\bibstyle{ieeetr}
 \bibdata{main}
-\bibstyle{plain}
+\bibcite{dxcTech}{1}
+\bibcite{rgbWiki}{2}
+\bibcite{imreadMat}{3}
+\bibcite{nvidiaCuda}{4}
+\bibcite{matCUDA}{5}
+\bibcite{noiseRemovalMat}{6}
+\bibcite{edgeDetMat}{7}
+\bibcite{greyScaleRef}{8}
+\bibcite{cudaGPU}{9}
+\bibcite{0131873741}{10}
+\bibcite{morphArticle}{11}
+\bibcite{gonzalez2008digital}{12}
+\@writefile{toc}{\contentsline {section}{References}{18}}
 \@writefile{toc}{\contentsline {section}{\numberline {A}Matlab Scripts}{19}}
 \newlabel{ReadLicensePlate}{{1}{19}}
 \@writefile{lol}{\contentsline {lstlisting}{\numberline {1}The matlabscript corresponding main matlab script.}{19}}
@@ -115,6 +157,8 @@
 \@writefile{lol}{\contentsline {lstlisting}{\numberline {4}The matlabscript corresponding to the function used to find the correct containers.}{21}}
 \newlabel{eliminateOptions}{{5}{23}}
 \@writefile{lol}{\contentsline {lstlisting}{\numberline {5}The matlabscript corresponding to the function used to eliminate unlikely options.}{23}}
-\newlabel{LastPage}{{}{23}}
-\xdef\lastpage@lastpage{23}
+\newlabel{readLetter}{{6}{23}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6}The matlabscript corresponding to the function used to match a container to a letter.}{23}}
+\newlabel{LastPage}{{}{25}}
+\xdef\lastpage@lastpage{25}
 \gdef\lastpage@lastpageHy{}

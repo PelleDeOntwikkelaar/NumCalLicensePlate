@@ -2,4 +2,23 @@
 \section{Tests and Results}
 The main objective of this section is proving my system works.
 The explenation of how it works is done in previous sections.
-To prove how the system works I have tested with a couple of license plates to see what the result is.
+With testing the system the following things happend:
+The system is very good at identifying text in the image.
+When all boxes are matched to letters, the text is always translated correctly.
+The problem there is: there is more text on a car than only the licenseplate.
+\par
+Pictures of cars where the license plate is
+\begin{enumerate}
+	\item Clearly visible
+	\item Sharp enough
+	\item No text present on the car, or not in the same Y area.
+\end{enumerate}
+The system always detects the right license plate.
+\par
+Problems begin to occur when there is a lot of text present in the picture.
+Especially when this text is very clearly visible and sharp.
+The system releis completely on edge detection and not on machine learning to predict in which part of the image the license plate will be.
+This means that when the other text in the picture is of about the same size than the license plate and more clearly visible, the system is going to make mistakes.
+\par 
+TODO: Improve.
+gate@upm.es

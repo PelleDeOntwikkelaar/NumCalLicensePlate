@@ -1,31 +1,43 @@
 \babel@toc {nil}{}
 \contentsline {section}{Abstract}{I}
 \contentsline {section}{Introduction}{II}
+\contentsline {section}{List of Figures}{V}
+\contentsline {section}{List of Listings}{V}
 \contentsline {section}{\numberline {1}Problem Introduction}{1}
 \contentsline {subsection}{\numberline {1.1}Description}{1}
 \contentsline {subsection}{\numberline {1.2}Matlab functionality}{1}
 \contentsline {subsection}{\numberline {1.3}Goals and Objectives}{1}
 \contentsline {subsection}{\numberline {1.4}Possible Extensions}{1}
 \contentsline {subsubsection}{\numberline {1.4.1}Moving Images}{1}
-\contentsline {subsubsection}{\numberline {1.4.2}CUDA}{2}
-\contentsline {section}{\numberline {2}Problem Breakdown}{3}
-\contentsline {subsection}{\numberline {2.1}Image manipulation}{3}
-\contentsline {subsection}{\numberline {2.2}The Search}{4}
-\contentsline {subsubsection}{\numberline {2.2.1}Find Candidates}{4}
-\contentsline {subsection}{\numberline {2.3}Evaluation}{4}
-\contentsline {section}{\numberline {3}Component Overview}{5}
-\contentsline {subsection}{\numberline {3.1}Project Overview}{5}
-\contentsline {subsection}{\numberline {3.2}Image Manipulation Components}{5}
-\contentsline {subsubsection}{\numberline {3.2.1}Image Preparation}{5}
-\contentsline {subsubsection}{\numberline {3.2.2}Edge Detection}{6}
-\contentsline {subsubsection}{\numberline {3.2.3}Filling}{9}
-\contentsline {subsection}{\numberline {3.3}The Search}{11}
-\contentsline {subsubsection}{\numberline {3.3.1}Find Candidates}{11}
-\contentsline {subsubsection}{\numberline {3.3.2}Testing}{11}
-\contentsline {subsubsection}{\numberline {3.3.3}Choice}{12}
-\contentsline {section}{\numberline {4}Tests and Results}{13}
-\contentsline {section}{\numberline {5}Development proces}{14}
-\contentsline {section}{\numberline {6}Critical Reflection}{15}
-\contentsline {section}{\numberline {7}Conclusion}{16}
-\contentsline {section}{\numberline {8}Possible Extensions}{17}
+\contentsline {subsubsection}{\numberline {1.4.2}CUDA}{1}
+\contentsline {section}{\numberline {2}Problem Breakdown}{2}
+\contentsline {subsection}{\numberline {2.1}Image manipulation}{2}
+\contentsline {subsection}{\numberline {2.2}The Search}{3}
+\contentsline {subsubsection}{\numberline {2.2.1}Find Candidates}{3}
+\contentsline {subsection}{\numberline {2.3}Evaluation}{3}
+\contentsline {section}{\numberline {3}Component Overview}{4}
+\contentsline {subsection}{\numberline {3.1}Project Overview}{4}
+\contentsline {subsection}{\numberline {3.2}Image Manipulation Components}{4}
+\contentsline {subsubsection}{\numberline {3.2.1}Image Preparation}{4}
+\contentsline {subsubsection}{\numberline {3.2.2}Edge Detection}{5}
+\contentsline {subsubsection}{\numberline {3.2.3}Filling}{8}
+\contentsline {subsection}{\numberline {3.3}The Search}{10}
+\contentsline {subsubsection}{\numberline {3.3.1}Find Candidates}{10}
+\contentsline {subsubsection}{\numberline {3.3.2}Testing}{10}
+\contentsline {subsubsection}{\numberline {3.3.3}Choice}{11}
+\contentsline {section}{\numberline {4}Tests and Results}{12}
+\contentsline {section}{\numberline {5}Development process}{13}
+\contentsline {section}{\numberline {6}Critical Reflection}{14}
+\contentsline {subsection}{\numberline {6.1}The objectives}{14}
+\contentsline {subsection}{\numberline {6.2}Development process}{14}
+\contentsline {section}{\numberline {7}Conclusion}{15}
+\contentsline {section}{\numberline {8}Possible Extensions}{16}
+\contentsline {subsection}{\numberline {8.1}Products}{16}
+\contentsline {subsubsection}{\numberline {8.1.1}The extra Objectives}{16}
+\contentsline {subsubsection}{\numberline {8.1.2}EU - proof}{16}
+\contentsline {subsubsection}{\numberline {8.1.3}Custom made products}{16}
+\contentsline {subsection}{\numberline {8.2}Extra Research}{16}
+\contentsline {subsubsection}{\numberline {8.2.1}Moving Images}{16}
+\contentsline {subsubsection}{\numberline {8.2.2}CUDA}{17}
+\contentsline {section}{References}{18}
 \contentsline {section}{\numberline {A}Matlab Scripts}{19}

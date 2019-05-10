@@ -7,10 +7,10 @@ clear all;
 % Part 1 -------------------- Image Manipulation --------------------
 
 % image name is loaded into the workspace.
-imageName='lp2.jpg';
+imageName='lp3.jpg';
 % information about the license plate
-totalCharacters = 5;
-letters= 1;
+totalCharacters = 7;
+letters= 0;
 % image manipulation script is used.
 imageManipulation;
 

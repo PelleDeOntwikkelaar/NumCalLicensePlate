@@ -3,3 +3,4 @@
 \contentsline {lstlisting}{\numberline {3}The matlabscript corresponding to the image manipulation.}{20}
 \contentsline {lstlisting}{\numberline {4}The matlabscript corresponding to the function used to find the correct containers.}{21}
 \contentsline {lstlisting}{\numberline {5}The matlabscript corresponding to the function used to eliminate unlikely options.}{23}
+\contentsline {lstlisting}{\numberline {6}The matlabscript corresponding to the function used to match a container to a letter.}{23}

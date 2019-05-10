@@ -21,7 +21,7 @@ ind2=find(n2>=totalCharacters);
 plates=[];
 corrs=[];
 
-if length(ind)>=1 
+if length(ind2)>=1 
     for x=1:length(ind) 
         % find middle point, find width, make box, add result to output.
         MP=xout(ind(x));    
@@ -33,7 +33,7 @@ if length(ind)>=1
         corrs = cat(2,corrs,c');
     end
     
-elseif length(ind2)>=1
+elseif length(ind1)>=1
     for x=1:length(ind) 
         % find middle point, find width, make box, add result to output.
         MP=xout2(ind2(x));    

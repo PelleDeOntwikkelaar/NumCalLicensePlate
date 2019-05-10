@@ -1,2 +1,52 @@
 \documentclass[main.tex]{subfiles}
 \section{Possible Extensions}
+In this section I will discuss some products, developments, etc.. that can be made using my system.
+Later in this section follows a little more research and a short explanation about Moving Images and CUDA, this because these terms are well talked about during this report and maybe deserve a more in detail explanation.
+\subsection{Products}
+With making a general system like this, there are a lot of side products possible.
+There are some interesting ideas.
+\subsubsection{The extra Objectives}
+The extra objectives discussed in the previous sections are not met.
+This means that the first logical extension to the project is meeting these objectives.
+Meeting both extra objectives can mean a total change in strategy and project structure.
+\subsubsection{EU - proof}
+With making it EU proof is meant designing a system that can possibly detect all the different types of license plates in the European union.
+In this way the system will not only return the license plate but also the country of residence and maybe even the region.
+This extension is completely software side and can be in combination with the extension of the extra objectives.
+\subsubsection{Custom made products}
+While the previous extensions are mostly based on the software side, this is an integration of the software into custom hardware.
+Designing custom products int he way of designing a stand alone system.
+This can go from simple designs like a a camera attached to a raspberry pi for "home" use, to a fully developed system.
+With fully developed meaning, multiple cameras connected to a heavy computer system or GPU, maybe even combined with a server.
+\par
+With the "home" system, or lightweight system, a lot of options are available.
+Opening the gate from your loan when your car is detected, opening a barrel of private corporate parking.
+Using the system to drop down road poles when certain vehicles arrive, there are a lot of options with the lightweight system.
+There is a security concern though, you are not controlling who enters but only which license plate so in theory everybody can copy the plate to enter so this always needs to be kept in mind while developing such a system.
+\par
+Fully developed systems are bigger projects end are far more used in traffic control or security measurements.
+This means that the complexity of the system increases exponentially.
+Also because the professional usage requires a lot more fail proof system. 
+Because of these reasons, a fully developed system lays maybe way out of reach of a student project.
+\subsection{Extra Research}
+The extra research is most of all an explanation for a two terms constantly used in this report.
+\subsubsection{Moving Images}
+No matter in which way this system or concept is described, one thing is always going to be true.
+It is a digital system.
+This means that moving images are in theory side by side images, produced in a certain rate.
+A very common rate is 25frames/second. This means that 25 pictures are produced every second.
+When developing a system it is going to have an input of 25 pictures a second.
+Analysing all 25 with the same intensity is not a good idea.
+This means that the system has to make a rational choice which frames can have a license plate in them and which frames to drop from the start.
+\subsubsection{CUDA}
+CUDA is a programming language, based on C, developed by Nvidia.
+Together with the right plugins, it allows a system to directly make use of the GPU.
+The GPU has to be CUDA enabled and of course from Nvidia.
+The direct advantage of GPU programming is that a GPU consists of more cores.
+The difference with a CPU is that a lot the GPU cores have to execute the same instruction.
+This is not good for general usage but it is good to do repetitive tasks.
+A common repetitive task is the manipulation of pixels or the processing of signals.
+Therefor it would be a very good extension to this project.
+\par
+Toolboxes in \textit{Matlab} make use of CUDA to enable parallel programming.
+This does mean that parallel code only works on computer systems that have a CUDA enabled GPU.

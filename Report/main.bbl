@@ -1,3 +1,62 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{10}
+
+\bibitem{dxcTech}
+{DXC Technologies}, ``Intelligent transport systems.''
+  \url{https://www.dxc.technology/nl/offerings/136123-dxc_intelligent_transportation_systems},
+  January 2019.
+\newblock Last checked on apr~25, 2019.
+
+\bibitem{rgbWiki}
+{Wikipedia}, ``Rgb color model.''
+  \url{https://en.wikipedia.org/wiki/RGB_color_model}, April.
+\newblock Last checked on apr~26, 2019.
+
+\bibitem{imreadMat}
+{Mathworks}, ``Imread.''
+  \url{https://nl.mathworks.com/help/matlab/ref/imread.html}, April.
+\newblock Last checked on apr~26, 2019.
+
+\bibitem{nvidiaCuda}
+{Nvidia}, ``About cuda.'' \url{https://developer.nvidia.com/about-cuda}, April.
+\newblock Last checked on apr~28, 2019.
+
+\bibitem{matCUDA}
+{Mathworks}, ``Matlab gpu computing support for nvidia cuda-enabled gpus.''
+  \url{https://nl.mathworks.com/solutions/gpu-computing.html}, April.
+\newblock Last checked on apr~28, 2019.
+
+\bibitem{noiseRemovalMat}
+{Mathworks}, ``Noise removal.''
+  \url{https://nl.mathworks.com/help/images/noise-removal.html}, April.
+\newblock Last checked on apr~24, 2019.
+
+\bibitem{edgeDetMat}
+{Mathworks}, ``Edge detection methods for finding object boundaries in
+  images.'' \url{https://nl.mathworks.com/discovery/edge-detection.html},
+  April.
+\newblock Last checked on apr~24, 2019.
+
+\bibitem{greyScaleRef}
+S.~C. R.~M. Michael~Stokes, Matthew~Anderson, ``A standard default color space
+  for the internet - srgb,'' {\em w3.org}, vol.~1.10, 1996.
+
+\bibitem{cudaGPU}
+{Nvidia}, ``Supported gpus.''
+  \url{https://www.geforce.com/hardware/technology/cuda/supported-gpus}, April.
+\newblock Last checked on apr~28, 2019.
+
+\bibitem{0131873741}
+J.~G. Proakis and D.~K. Manolakis, {\em Digital Signal Processing (4th
+  Edition)}.
+\newblock Prentice Hall, 4~ed., 2006.
+
+\bibitem{morphArticle}
+R.~van~den Boomgaard and R.~van Balen, ``Methods for fast morphological image
+  transforms using bitmapped images,'' {\em CVGIP: Graphical Models and Image
+  Processing}, vol.~54, pp.~252--258, 05 1992.
+
+\bibitem{gonzalez2008digital}
+R.~C. Gonzalez and R.~E. Woods, {\em Digital image processing}.
+\newblock Upper Saddle River, N.J.: Prentice Hall, 2008.
 
 \end{thebibliography}
