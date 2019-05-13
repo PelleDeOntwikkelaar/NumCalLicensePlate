@@ -52,6 +52,13 @@ The factors used can be found in equation~\vref{eq:greyscale}.
     Y_{linear} = 0.2126R_{linear} + 0.7152G_{linear} + 0.0722B_{linear}
     \label{eq:greyscale}
 \end{equation}
+With:
+\begin{itemize}
+	\item $R_{linear}$: rgb red color value, varies from 0 to 255. 
+	\item $G_{linear}$: rgb green color value, varies from 0 to 255.
+	\item $B_{linear}$: rgb blue color value, varies from 0 to 255.
+	\item $Y_{linear}$: greyscale value, varies from 0 to 255.
+\end{itemize}
 The value of these factors are defined in the \textit{CIE 1931}. \cite{greyScaleRef}.
 When everything is executed as supposed to, the function now returns both the greyscale and rgb image, otherwise the inputimage is returned twice.\\
 From this point on, a greyscaled image is used in the script.

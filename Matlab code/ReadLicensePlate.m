@@ -30,6 +30,7 @@ if ~isempty(plates)
     [M, I]=max(corrs);
     licensePlateInt=plates(:,I);
     licensePlateInt=licensePlateInt';
+    %licensePlate = char(licensePlateInt);
     
     fid = fopen('licensePlate.txt', 'wt'); 
     fprintf(fid,'%s\n',licensePlateInt);      

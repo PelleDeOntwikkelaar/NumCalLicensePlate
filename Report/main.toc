@@ -23,7 +23,7 @@
 \contentsline {subsubsection}{\numberline {3.2.3}Filling}{8}
 \contentsline {subsection}{\numberline {3.3}The Search}{10}
 \contentsline {subsubsection}{\numberline {3.3.1}Find Candidates}{10}
-\contentsline {subsubsection}{\numberline {3.3.2}Testing}{10}
+\contentsline {subsubsection}{\numberline {3.3.2}Testing}{11}
 \contentsline {subsubsection}{\numberline {3.3.3}Choice}{11}
 \contentsline {section}{\numberline {4}Tests and Results}{12}
 \contentsline {section}{\numberline {5}Development process}{13}

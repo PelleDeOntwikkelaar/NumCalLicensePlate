@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.21)  9 MAY 2019 01:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.21)  13 MAY 2019 13:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1022,46 +1022,44 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 <images/strel.png, id=49, 718.685pt x 632.3625pt>
 File: images/strel.png Graphic file (type png)
 <use images/strel.png>
-Package pdftex.def Info: images/strel.png  used on input line 82.
+Package pdftex.def Info: images/strel.png  used on input line 89.
 (pdftex.def)             Requested size: 292.77629pt x 257.61066pt.
 <images/dilate.png, id=50, 1124.2pt x 481.8pt>
 File: images/dilate.png Graphic file (type png)
 <use images/dilate.png>
-Package pdftex.def Info: images/dilate.png  used on input line 93.
+Package pdftex.def Info: images/dilate.png  used on input line 100.
 (pdftex.def)             Requested size: 376.42575pt x 161.32497pt.
 <images/erode.png, id=51, 1124.2pt x 843.15pt>
 File: images/erode.png Graphic file (type png)
 <use images/erode.png>
-Package pdftex.def Info: images/erode.png  used on input line 107.
+Package pdftex.def Info: images/erode.png  used on input line 114.
 (pdftex.def)             Requested size: 376.42575pt x 282.3187pt.
  [5] [6 <./images/strel.png (PNG copy)> <./images/dilate.png (PNG copy)>]
 <images/DE.png, id=60, 752.8125pt x 531.9875pt>
 File: images/DE.png Graphic file (type png)
 <use images/DE.png>
-Package pdftex.def Info: images/DE.png  used on input line 117.
+Package pdftex.def Info: images/DE.png  used on input line 124.
 (pdftex.def)             Requested size: 376.42575pt x 266.01744pt.
-<images/hf.png, id=61, 943.525pt x 347.2975pt>
+ [7 <./images/erode.png (PNG copy)>]
+<images/hf.png, id=65, 943.525pt x 347.2975pt>
 File: images/hf.png Graphic file (type png)
 <use images/hf.png>
-Package pdftex.def Info: images/hf.png  used on input line 148.
+Package pdftex.def Info: images/hf.png  used on input line 155.
 (pdftex.def)             Requested size: 334.60422pt x 123.16164pt.
-<images/finalim.png, id=62, 1021.8175pt x 734.745pt>
+<images/finalim.png, id=66, 1021.8175pt x 734.745pt>
 File: images/finalim.png Graphic file (type png)
 <use images/finalim.png>
-Package pdftex.def Info: images/finalim.png  used on input line 154.
+Package pdftex.def Info: images/finalim.png  used on input line 161.
 (pdftex.def)             Requested size: 334.60422pt x 240.5943pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7 <./images/erode.png (PNG copy)>] [8 <./images/DE.png (PNG copy)>] [9 <./ima
-ges/hf.png (PNG copy)> <./images/finalim.png (PNG copy)>]
+ [8 <./images/DE.png (PNG copy)>] [9 <./images/hf.png (PNG copy)> <./images/fin
+alim.png (PNG copy)>]
 <images/hist.png, id=73, 1124.2pt x 843.15pt>
 File: images/hist.png Graphic file (type png)
 <use images/hist.png>
-Package pdftex.def Info: images/hist.png  used on input line 208.
+Package pdftex.def Info: images/hist.png  used on input line 215.
 (pdftex.def)             Requested size: 250.95476pt x 188.20818pt.
- [10]) [11 <./images/hist.png (PNG copy)>] (./sections/section4.tex) [12] (./se
-ctions/section5.tex) [13]
+ [10]) [11 <./images/hist.png (PNG copy)>]
+(./sections/section4.tex) [12] (./sections/section5.tex) [13]
 (./sections/section6.tex) [14] (./sections/section7.tex) [15]
 (./sections/section8.tex [16]) [17] (./main.bbl
 Underfull \hbox (badness 2119) in paragraph at lines 10--13
@@ -1110,10 +1108,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 AED: lastpage setting LastPage
 (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 23918 strings out of 492649
- 441027 string characters out of 6129622
+ 23920 strings out of 492649
+ 441043 string characters out of 6129622
  736355 words of memory out of 5000000
- 27460 multiletter control sequences out of 15000+600000
+ 27462 multiletter control sequences out of 15000+600000
  543536 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,12n,72p,2166b,2020s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1137,7 +1135,7 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2017/texmf
 dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2017/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2017/texmf-dis
 t/fonts/type1/urw/courier/ucrro8a.pfb>
-Output written on main.pdf (31 pages, 789064 bytes).
+Output written on main.pdf (31 pages, 791066 bytes).
 PDF statistics:
  192 PDF objects out of 1000 (max. 8388607)
  129 compressed objects within 2 object streams
